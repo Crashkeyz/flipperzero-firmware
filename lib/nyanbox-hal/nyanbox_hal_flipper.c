@@ -4,6 +4,7 @@
 #include <furi_hal_bt.h>
 #include <gui/gui.h>
 #include <input/input.h>
+#include <memmgr.h>
 
 /**
  * NyanBox HAL Implementation for Flipper Zero
@@ -127,11 +128,12 @@ void nyanbox_hal_wireless_disconnect(void) {
  * Bluetooth Deployment Support
  */
 bool nyanbox_hal_ble_init(void) {
-    return furi_hal_bt_init();
+    furi_hal_bt_init();
+    return true;
 }
 
 bool nyanbox_hal_ble_start_advertising(const char* device_name) {
-    furi_hal_bt_set_profile_adv_name(device_name);
+    UNUSED(device_name); // Name is set by BT service
     furi_hal_bt_start_advertising();
     return true;
 }
@@ -188,7 +190,7 @@ bool nyanbox_hal_gpio_read(uint8_t pin) {
 NyanBoxAICapabilities nyanbox_hal_ai_get_capabilities(void) {
     NyanBoxAICapabilities caps;
     caps.model_size = 0;
-    caps.available_memory = furi_hal_get_free_heap();
+    caps.available_memory = memmgr_get_free_heap();
     caps.hardware_acceleration = false; // Flipper Zero doesn't have AI accelerator
     return caps;
 }

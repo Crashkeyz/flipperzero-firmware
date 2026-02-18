@@ -1,6 +1,7 @@
 #include "nyanbox_wireless.h"
 #include "nyanbox_hal.h"
 #include <string.h>
+#include <stdlib.h>
 
 /**
  * NyanBox Wireless Communication Module Implementation

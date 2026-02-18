@@ -1,6 +1,8 @@
 #include "nyanbox_ai.h"
 #include "nyanbox_hal.h"
 #include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * NyanBox AI Module Implementation
