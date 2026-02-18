@@ -85,15 +85,18 @@ bool nyanbox_wireless_ble_start_scan(void) {
     
     // Simulate finding some devices
     g_ble_device_count = 3;
-    strncpy(g_ble_devices[0].name, "NyanBox-1", sizeof(g_ble_devices[0].name));
+    strncpy(g_ble_devices[0].name, "NyanBox-1", sizeof(g_ble_devices[0].name) - 1);
+    g_ble_devices[0].name[sizeof(g_ble_devices[0].name) - 1] = '\0';
     g_ble_devices[0].rssi = -45;
     g_ble_devices[0].connectable = true;
     
-    strncpy(g_ble_devices[1].name, "NyanBox-2", sizeof(g_ble_devices[1].name));
+    strncpy(g_ble_devices[1].name, "NyanBox-2", sizeof(g_ble_devices[1].name) - 1);
+    g_ble_devices[1].name[sizeof(g_ble_devices[1].name) - 1] = '\0';
     g_ble_devices[1].rssi = -67;
     g_ble_devices[1].connectable = true;
     
-    strncpy(g_ble_devices[2].name, "Unknown", sizeof(g_ble_devices[2].name));
+    strncpy(g_ble_devices[2].name, "Unknown", sizeof(g_ble_devices[2].name) - 1);
+    g_ble_devices[2].name[sizeof(g_ble_devices[2].name) - 1] = '\0';
     g_ble_devices[2].rssi = -82;
     g_ble_devices[2].connectable = false;
     
@@ -147,12 +150,14 @@ bool nyanbox_wireless_wifi_start_scan(void) {
     
     // Simulate finding some networks
     g_wifi_network_count = 2;
-    strncpy(g_wifi_networks[0].ssid, "NyanBox-WiFi", sizeof(g_wifi_networks[0].ssid));
+    strncpy(g_wifi_networks[0].ssid, "NyanBox-WiFi", sizeof(g_wifi_networks[0].ssid) - 1);
+    g_wifi_networks[0].ssid[sizeof(g_wifi_networks[0].ssid) - 1] = '\0';
     g_wifi_networks[0].rssi = -50;
     g_wifi_networks[0].channel = 6;
     g_wifi_networks[0].encrypted = true;
     
-    strncpy(g_wifi_networks[1].ssid, "Guest-Network", sizeof(g_wifi_networks[1].ssid));
+    strncpy(g_wifi_networks[1].ssid, "Guest-Network", sizeof(g_wifi_networks[1].ssid) - 1);
+    g_wifi_networks[1].ssid[sizeof(g_wifi_networks[1].ssid) - 1] = '\0';
     g_wifi_networks[1].rssi = -75;
     g_wifi_networks[1].channel = 11;
     g_wifi_networks[1].encrypted = false;
