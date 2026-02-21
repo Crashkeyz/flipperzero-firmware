@@ -128,3 +128,8 @@ C_SOURCES		+= $(wildcard $(LIB_DIR)/flipper_format/*.c)
 # Micro-ECC
 CFLAGS			+= -I$(LIB_DIR)/micro-ecc
 C_SOURCES		+= $(wildcard $(LIB_DIR)/micro-ecc/*.c)
+
+# NyanBox HAL
+CFLAGS			+= -I$(LIB_DIR)/nyanbox-hal
+C_SOURCES		+= $(wildcard $(LIB_DIR)/nyanbox-hal/*.c)
+
