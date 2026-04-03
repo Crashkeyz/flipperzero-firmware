@@ -2,8 +2,6 @@
 #include <furi.h>
 #include <furi_hal.h>
 #include <furi_hal_bt.h>
-#include <gui/gui.h>
-#include <input/input.h>
 #include <memmgr.h>
 
 /**
@@ -36,10 +34,16 @@ void nyanbox_hal_display_clear(void) {
 }
 
 void nyanbox_hal_display_draw_pixel(uint16_t x, uint16_t y, bool on) {
+    UNUSED(x);
+    UNUSED(y);
+    UNUSED(on);
     // This will be handled by the GUI canvas in the application
 }
 
 void nyanbox_hal_display_draw_text(uint16_t x, uint16_t y, const char* text) {
+    UNUSED(x);
+    UNUSED(y);
+    UNUSED(text);
     // This will be handled by the GUI canvas in the application
 }
 
@@ -58,33 +62,13 @@ NyanBoxDisplayInfo nyanbox_hal_display_get_info(void) {
 /**
  * Input Management
  */
-static NyanBoxButton map_flipper_key(InputKey key) {
-    switch(key) {
-        case InputKeyUp: return NyanBoxButton_Up;
-        case InputKeyDown: return NyanBoxButton_Down;
-        case InputKeyLeft: return NyanBoxButton_Left;
-        case InputKeyRight: return NyanBoxButton_Right;
-        case InputKeyOk: return NyanBoxButton_Ok;
-        case InputKeyBack: return NyanBoxButton_Back;
-        default: return NyanBoxButton_Ok;
-    }
-}
-
-static NyanBoxButtonEvent map_flipper_event(InputType type) {
-    switch(type) {
-        case InputTypePress: return NyanBoxButtonEvent_Press;
-        case InputTypeRelease: return NyanBoxButtonEvent_Release;
-        case InputTypeLong: return NyanBoxButtonEvent_LongPress;
-        default: return NyanBoxButtonEvent_Press;
-    }
-}
-
 void nyanbox_hal_input_init(NyanBoxButtonCallback callback, void* context) {
     g_button_callback = callback;
     g_button_context = context;
 }
 
 bool nyanbox_hal_input_get_state(NyanBoxButton button) {
+    UNUSED(button);
     // This would require direct GPIO access to buttons
     // For now, return false - state is provided via callbacks
     return false;
@@ -96,7 +80,8 @@ bool nyanbox_hal_input_get_state(NyanBoxButton button) {
 bool nyanbox_hal_wireless_init(NyanBoxWirelessType type) {
     switch(type) {
         case NyanBoxWireless_BLE:
-            return furi_hal_bt_init();
+            furi_hal_bt_init();
+            return true;
         case NyanBoxWireless_SubGHz:
             furi_hal_subghz_init();
             return true;
@@ -106,12 +91,16 @@ bool nyanbox_hal_wireless_init(NyanBoxWirelessType type) {
 }
 
 bool nyanbox_hal_wireless_send(const uint8_t* data, uint16_t length) {
+    UNUSED(data);
+    UNUSED(length);
     // This would use the active wireless type
     // For now, use BLE serial
     return true; // Simplified for this implementation
 }
 
 int16_t nyanbox_hal_wireless_receive(uint8_t* buffer, uint16_t max_length) {
+    UNUSED(buffer);
+    UNUSED(max_length);
     // This would use the active wireless type
     return -1; // Not implemented yet
 }
@@ -149,6 +138,8 @@ void nyanbox_hal_ble_set_data_callback(NyanBoxBLEDataCallback callback, void* co
 }
 
 bool nyanbox_hal_ble_send_data(const uint8_t* data, uint16_t length) {
+    UNUSED(data);
+    UNUSED(length);
     // Would use furi_hal_bt serial or custom profile
     return true; // Simplified
 }
@@ -157,29 +148,24 @@ bool nyanbox_hal_ble_send_data(const uint8_t* data, uint16_t length) {
  * GPIO Management
  */
 bool nyanbox_hal_gpio_init(uint8_t pin, NyanBoxGPIOMode mode) {
-    // Map to Flipper HAL GPIO
-    GpioMode gpio_mode;
-    switch(mode) {
-        case NyanBoxGPIO_Mode_Input:
-            gpio_mode = GpioModeInput;
-            break;
-        case NyanBoxGPIO_Mode_Output:
-            gpio_mode = GpioModeOutputPushPull;
-            break;
-        case NyanBoxGPIO_Mode_Analog:
-            gpio_mode = GpioModeAnalog;
-            break;
-        default:
-            return false;
+    UNUSED(pin);
+    // Validate mode - would use furi_hal_gpio with actual pin mapping
+    if(mode != NyanBoxGPIO_Mode_Input &&
+       mode != NyanBoxGPIO_Mode_Output &&
+       mode != NyanBoxGPIO_Mode_Analog) {
+        return false;
     }
-    return true; // Simplified - would need actual GPIO pin mapping
+    return true;
 }
 
 void nyanbox_hal_gpio_write(uint8_t pin, bool state) {
+    UNUSED(pin);
+    UNUSED(state);
     // Would use furi_hal_gpio_write with mapped pin
 }
 
 bool nyanbox_hal_gpio_read(uint8_t pin) {
+    UNUSED(pin);
     // Would use furi_hal_gpio_read with mapped pin
     return false;
 }
@@ -202,12 +188,18 @@ bool nyanbox_hal_ai_init(void) {
 }
 
 bool nyanbox_hal_ai_load_model(const uint8_t* model_data, uint32_t size) {
+    UNUSED(model_data);
+    UNUSED(size);
     // Load AI model into memory
     // Would need TensorFlow Lite Micro or similar
     return false; // Not implemented yet
 }
 
 bool nyanbox_hal_ai_inference(const float* input, uint32_t input_size, float* output, uint32_t output_size) {
+    UNUSED(input);
+    UNUSED(input_size);
+    UNUSED(output);
+    UNUSED(output_size);
     // Run inference
     return false; // Not implemented yet
 }
