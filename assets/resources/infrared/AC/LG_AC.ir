@@ -1,0 +1,107 @@
+Filetype: IR signals file
+Version: 1
+# LG AC/Split Unit Remote (NEC protocol)
+# LG Dual Inverter, LG ARTCOOL series
+# Address: 0x88 (common LG AC address)
+# 
+name: Power
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 08 00 00 00
+# 
+name: Cool_mode
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 00 00 00 00
+# 
+name: Heat_mode
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 04 00 00 00
+# 
+name: Fan_mode
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 02 00 00 00
+# 
+name: Auto_mode
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 03 00 00 00
+# 
+name: Dry_mode
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 01 00 00 00
+# 
+name: Temp_up
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 10 00 00 00
+# 
+name: Temp_dn
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 11 00 00 00
+# 
+name: Fan_low
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 15 00 00 00
+# 
+name: Fan_med
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 16 00 00 00
+# 
+name: Fan_high
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 17 00 00 00
+# 
+name: Fan_auto
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 14 00 00 00
+# 
+name: Swing_v
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 20 00 00 00
+# 
+name: Sleep
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 30 00 00 00
+# 
+name: Jet
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 31 00 00 00
+# 
+name: Energy_save
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 32 00 00 00
+# 
+name: Timer
+type: parsed
+protocol: NEC
+address: 88 00 00 00
+command: 40 00 00 00

@@ -1,0 +1,178 @@
+Filetype: IR signals file
+Version: 1
+# Yamaha AV Receiver Remote (NEC protocol)
+# Yamaha RX-V, RX-A series - NEC address 0x7A
+# 
+name: Power
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 1A 00 00 00
+# 
+name: Power_on
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 7E 00 00 00
+# 
+name: Power_off
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 7F 00 00 00
+# 
+name: Vol_up
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 1E 00 00 00
+# 
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 1F 00 00 00
+# 
+name: Mute
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 1D 00 00 00
+# 
+name: Input_HDMI1
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 71 00 00 00
+# 
+name: Input_HDMI2
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 72 00 00 00
+# 
+name: Input_HDMI3
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 73 00 00 00
+# 
+name: Input_HDMI4
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 74 00 00 00
+# 
+name: Input_AV1
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 11 00 00 00
+# 
+name: Input_AV2
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 12 00 00 00
+# 
+name: Input_Bluetooth
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 55 00 00 00
+# 
+name: Input_Net
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 56 00 00 00
+# 
+name: Up
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 60 00 00 00
+# 
+name: Down
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 61 00 00 00
+# 
+name: Left
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 62 00 00 00
+# 
+name: Right
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 63 00 00 00
+# 
+name: Ok
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 64 00 00 00
+# 
+name: Menu
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 65 00 00 00
+# 
+name: Return
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 66 00 00 00
+# 
+name: Play
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 24 00 00 00
+# 
+name: Pause
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 25 00 00 00
+# 
+name: Stop
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 26 00 00 00
+# 
+name: Skip_next
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 29 00 00 00
+# 
+name: Skip_prev
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 28 00 00 00
+# 
+name: Surround_Cinema
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 40 00 00 00
+# 
+name: Surround_Music
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 41 00 00 00
+# 
+name: Surround_Stereo
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 42 00 00 00

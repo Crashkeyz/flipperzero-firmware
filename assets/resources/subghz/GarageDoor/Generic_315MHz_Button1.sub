@@ -1,0 +1,11 @@
+Filetype: Flipper SubGhz Key File
+Version: 1
+# Generic 315 MHz Princeton-protocol remote
+# Used in North American garage door openers and RF key fobs
+# Button 1
+Frequency: 315000000
+Preset: FuriHalSubGhzPresetOok650Async
+Protocol: Princeton
+Bit: 24
+Key: 00 12 34 56
+Te: 320

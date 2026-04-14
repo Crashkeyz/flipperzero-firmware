@@ -1,0 +1,137 @@
+Filetype: IR signals file
+Version: 1
+# Sony AV Receiver / Home Theater Remote (SIRC protocol)
+# Sony STR series (STR-DN, STR-DH, STR-ZA) - device address 0x11 (AV amp)
+# 
+name: Power
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 15 00 00 00
+# 
+name: Vol_up
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 12 00 00 00
+# 
+name: Vol_dn
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 13 00 00 00
+# 
+name: Mute
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 14 00 00 00
+# 
+name: Input_next
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 26 00 00 00
+# 
+name: Input_prev
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 27 00 00 00
+# 
+name: Up
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 74 00 00 00
+# 
+name: Down
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 75 00 00 00
+# 
+name: Left
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 78 00 00 00
+# 
+name: Right
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 79 00 00 00
+# 
+name: Ok
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 65 00 00 00
+# 
+name: Home
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 60 00 00 00
+# 
+name: Back
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 6A 00 00 00
+# 
+name: Play
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 32 00 00 00
+# 
+name: Pause
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 33 00 00 00
+# 
+name: Stop
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 31 00 00 00
+# 
+name: Skip_next
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 30 00 00 00
+# 
+name: Skip_prev
+type: parsed
+protocol: SIRC
+address: 11 00 00 00
+command: 2F 00 00 00
+# Sony TV speaker bar / soundbar (device 0x1A)
+# 
+name: Power_Soundbar
+type: parsed
+protocol: SIRC
+address: 1A 00 00 00
+command: 15 00 00 00
+# 
+name: Vol_up_Soundbar
+type: parsed
+protocol: SIRC
+address: 1A 00 00 00
+command: 12 00 00 00
+# 
+name: Vol_dn_Soundbar
+type: parsed
+protocol: SIRC
+address: 1A 00 00 00
+command: 13 00 00 00
+# 
+name: Mute_Soundbar
+type: parsed
+protocol: SIRC
+address: 1A 00 00 00
+command: 14 00 00 00

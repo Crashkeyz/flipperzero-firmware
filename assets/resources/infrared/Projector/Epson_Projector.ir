@@ -1,0 +1,154 @@
+Filetype: IR signals file
+Version: 1
+# Epson Projector Remote (NEC protocol)
+# Epson EX, PowerLite, BrightLink series - NEC address 0xBF
+# 
+name: Power
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 00 00 00 00
+# 
+name: Vol_up
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 01 00 00 00
+# 
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 02 00 00 00
+# 
+name: Mute
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 03 00 00 00
+# 
+name: Source
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 04 00 00 00
+# 
+name: HDMI1
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 05 00 00 00
+# 
+name: HDMI2
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 06 00 00 00
+# 
+name: Computer
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 07 00 00 00
+# 
+name: Video
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 08 00 00 00
+# 
+name: Menu
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 09 00 00 00
+# 
+name: Up
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 0A 00 00 00
+# 
+name: Down
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 0B 00 00 00
+# 
+name: Left
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 0C 00 00 00
+# 
+name: Right
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 0D 00 00 00
+# 
+name: Ok
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 0E 00 00 00
+# 
+name: Back
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 0F 00 00 00
+# 
+name: Aspect
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 10 00 00 00
+# 
+name: Zoom_in
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 11 00 00 00
+# 
+name: Zoom_out
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 12 00 00 00
+# 
+name: Keystone_up
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 13 00 00 00
+# 
+name: Keystone_dn
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 14 00 00 00
+# 
+name: Freeze
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 15 00 00 00
+# 
+name: A_V_Mute
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 16 00 00 00
+# 
+name: Brightness
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 17 00 00 00
+# 
+name: Color_mode
+type: parsed
+protocol: NEC
+address: BF 00 00 00
+command: 18 00 00 00

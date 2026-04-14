@@ -1,0 +1,83 @@
+Filetype: IR signals file
+Version: 1
+# Samsung AC/Split Unit Remote (Samsung32 protocol)
+# Samsung Wind-Free, Samsung AR series
+# Address: 0x18 (common Samsung AC address)
+# 
+name: Power
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 62 00 00 00
+# 
+name: Cool_mode
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 60 00 00 00
+# 
+name: Heat_mode
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 61 00 00 00
+# 
+name: Fan_mode
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 63 00 00 00
+# 
+name: Auto_mode
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 64 00 00 00
+# 
+name: Dry_mode
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 65 00 00 00
+# 
+name: Temp_up
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 6A 00 00 00
+# 
+name: Temp_dn
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 6B 00 00 00
+# 
+name: Fan_speed_up
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 70 00 00 00
+# 
+name: Fan_speed_dn
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 71 00 00 00
+# 
+name: Swing
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 7A 00 00 00
+# 
+name: Sleep
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 78 00 00 00
+# 
+name: Timer
+type: parsed
+protocol: Samsung32
+address: 18 00 00 00
+command: 66 00 00 00
