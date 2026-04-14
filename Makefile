@@ -126,3 +126,14 @@ format:
 guruguru:
 	@echo "ぐるぐる回る"
 	@$(PROJECT_ROOT)/scripts/guruguru.py $(PROJECT_ROOT)
+
+# Signal Pack targets
+.PHONY: signals
+signals:
+	@echo "Building Flipper Zero IR + SubGHz signal pack..."
+	@python3 $(PROJECT_ROOT)/scripts/pack_signals.py
+
+.PHONY: signals-validate
+signals-validate:
+	@echo "Validating Flipper Zero signal files..."
+	@python3 $(PROJECT_ROOT)/scripts/pack_signals.py --validate-only

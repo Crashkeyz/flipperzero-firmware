@@ -1,0 +1,10 @@
+Filetype: Flipper SubGhz Key File
+Version: 1
+# Generic 868.35 MHz Princeton remote - common in European markets
+# Princeton Te=400 us, 24-bit code
+Frequency: 868350000
+Preset: FuriHalSubGhzPresetOok650Async
+Protocol: Princeton
+Bit: 24
+Key: 00 F1 E2 D3
+Te: 400

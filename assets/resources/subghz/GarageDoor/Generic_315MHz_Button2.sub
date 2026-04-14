@@ -1,0 +1,9 @@
+Filetype: Flipper SubGhz Key File
+Version: 1
+# Generic 315 MHz Princeton-protocol remote - Button 2
+Frequency: 315000000
+Preset: FuriHalSubGhzPresetOok650Async
+Protocol: Princeton
+Bit: 24
+Key: 00 78 9A BC
+Te: 320

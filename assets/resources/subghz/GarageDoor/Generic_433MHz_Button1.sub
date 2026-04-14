@@ -1,0 +1,12 @@
+Filetype: Flipper SubGhz Key File
+Version: 1
+# Generic garage door opener - Princeton protocol 433.92 MHz
+# This is an example Princeton-protocol 24-bit fixed code remote.
+# Princeton is used in many cheap generic 433 MHz remotes and garage openers.
+# Button 1
+Frequency: 433920000
+Preset: FuriHalSubGhzPresetOok650Async
+Protocol: Princeton
+Bit: 24
+Key: 00 A1 B2 C3
+Te: 400

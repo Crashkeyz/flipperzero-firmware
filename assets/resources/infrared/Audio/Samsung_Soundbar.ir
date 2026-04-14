@@ -1,0 +1,101 @@
+Filetype: IR signals file
+Version: 1
+# Samsung Soundbar Remote (Samsung32 protocol)
+# Samsung HW-Q, HW-S, HW-T series soundbars
+# Address: 0xF6 (common Samsung soundbar address)
+# 
+name: Power
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 02 00 00 00
+# 
+name: Vol_up
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 07 00 00 00
+# 
+name: Vol_dn
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 0B 00 00 00
+# 
+name: Mute
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 0F 00 00 00
+# 
+name: Source
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 1F 00 00 00
+# 
+name: Input_HDMI
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 78 00 00 00
+# 
+name: Input_Optical
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 79 00 00 00
+# 
+name: Input_Bluetooth
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 7A 00 00 00
+# 
+name: Input_WiFi
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 7B 00 00 00
+# 
+name: Bass_up
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 10 00 00 00
+# 
+name: Bass_dn
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 11 00 00 00
+# 
+name: Treble_up
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 12 00 00 00
+# 
+name: Treble_dn
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 13 00 00 00
+# 
+name: Sound_mode
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 30 00 00 00
+# 
+name: Surround
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 31 00 00 00
+# 
+name: Night_mode
+type: parsed
+protocol: Samsung32
+address: F6 00 00 00
+command: 32 00 00 00

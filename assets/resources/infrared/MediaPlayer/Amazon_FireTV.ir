@@ -1,0 +1,106 @@
+Filetype: IR signals file
+Version: 1
+# Amazon Fire TV Remote (NEC protocol)
+# Fire TV Stick 4K, Fire TV Cube - NEC address 0xF1
+# 
+name: Power
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 0D 00 00 00
+# 
+name: Home
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 23 00 00 00
+# 
+name: Back
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 0A 00 00 00
+# 
+name: Up
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 01 00 00 00
+# 
+name: Down
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 02 00 00 00
+# 
+name: Left
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 04 00 00 00
+# 
+name: Right
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 05 00 00 00
+# 
+name: Ok
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 06 00 00 00
+# 
+name: Play_Pause
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 0E 00 00 00
+# 
+name: Vol_up
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 10 00 00 00
+# 
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 11 00 00 00
+# 
+name: Mute
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 12 00 00 00
+# 
+name: Rewind
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 09 00 00 00
+# 
+name: Fast_fwd
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 08 00 00 00
+# 
+name: Menu
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 07 00 00 00
+# 
+name: Prime_Video
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 30 00 00 00
+# 
+name: Netflix
+type: parsed
+protocol: NEC
+address: F1 00 00 00
+command: 31 00 00 00

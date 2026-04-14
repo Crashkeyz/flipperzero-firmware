@@ -1,0 +1,119 @@
+Filetype: IR signals file
+Version: 1
+# Roku Remote (NEC protocol)
+# Roku Express, Roku Streaming Stick, Roku Ultra
+# NEC address 0x5743 (Roku uses NECext with 16-bit address)
+# 
+name: Power
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 0D F2 00 00
+# 
+name: Home
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 03 FC 00 00
+# 
+name: Back
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 0A F5 00 00
+# 
+name: Up
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 01 FE 00 00
+# 
+name: Down
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 02 FD 00 00
+# 
+name: Left
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 04 FB 00 00
+# 
+name: Right
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 05 FA 00 00
+# 
+name: Ok
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 06 F9 00 00
+# 
+name: Play_Pause
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 0E F1 00 00
+# 
+name: Vol_up
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 10 EF 00 00
+# 
+name: Vol_dn
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 11 EE 00 00
+# 
+name: Mute
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 12 ED 00 00
+# 
+name: Rewind
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 09 F6 00 00
+# 
+name: Fast_fwd
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 08 F7 00 00
+# 
+name: Options
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 07 F8 00 00
+# 
+name: Netflix
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 30 CF 00 00
+# 
+name: Hulu
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 31 CE 00 00
+# 
+name: Amazon
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 32 CD 00 00
+# 
+name: Disney_plus
+type: parsed
+protocol: NECext
+address: 43 57 00 00
+command: 33 CC 00 00
